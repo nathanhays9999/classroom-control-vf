@@ -49,4 +49,5 @@ node default {
   group   => 'root',
   mode    => '0644',
   content => "this is my puppet exercise motd\n",
+  }
 }
