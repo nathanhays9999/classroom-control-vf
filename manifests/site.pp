@@ -50,7 +50,7 @@ node default {
 #  mode    => '0644',
 #  content => "this is my puppet exercise motd\n",
 #  }
-include users
+#include users
 include skeleton
 #  exec { "cowsay 'Welcome to ${::fqdn}!' > /etc/motd":
 #path => '/usr/bin:/usr/local/bin',
