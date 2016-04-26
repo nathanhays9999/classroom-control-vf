@@ -60,4 +60,4 @@ include users
 #  ip => '127.0.0.1',
 #  ensure => present,
 #  }
-#}
+}
