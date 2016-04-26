@@ -51,13 +51,13 @@ node default {
 #  content => "this is my puppet exercise motd\n",
 #  }
 include users
-  exec { "cowsay 'Welcome to ${::fqdn}!' > /etc/motd":
-path => '/usr/bin:/usr/local/bin',
-creates => '/etc/motd',
-}
-  host { 'testing.puppetlabs':
-  name => 'testing.puppetlabs.vm',
-  ip => '127.0.0.1',
-  ensure => present,
-  }
-}
+#  exec { "cowsay 'Welcome to ${::fqdn}!' > /etc/motd":
+#path => '/usr/bin:/usr/local/bin',
+#creates => '/etc/motd',
+#}
+#  host { 'testing.puppetlabs':
+#  name => 'testing.puppetlabs.vm',
+#  ip => '127.0.0.1',
+#  ensure => present,
+#  }
+#}
