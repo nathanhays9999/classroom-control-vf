@@ -1,1 +1,2 @@
-docroot: C:/ProgramData/nginx/html/training
+---
+nginx::docroot: C:/ProgramData/nginx/html/training
