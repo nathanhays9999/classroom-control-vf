@@ -53,6 +53,11 @@ node default {
 #include users
 include skeleton
 include memcached
+if $::osfamily == 'Windows' {
+Package {
+provider => chocolatey,
+}
+}
 include nginx
 include users::admins
 if $::virtual != 'physical' {
