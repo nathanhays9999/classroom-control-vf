@@ -2,7 +2,8 @@ class profile::wordpress {
 class { 'apache':
   docroot => '/var/wordpress'
 }
-class { 'mysql':
+class { '::mysql:server':
+   root_password => 'strongpassword',
 
 }
 class { 'wordpress':
