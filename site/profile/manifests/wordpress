@@ -1,0 +1,10 @@
+class profile::wordpress {
+class { 'apache':
+  docroot => '/var/wordpress'
+}
+class { 'mysql':
+
+}
+class { 'wordpress':
+
+{
