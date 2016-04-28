@@ -10,10 +10,6 @@ $root = undef,
 ) inherits nginx::params {
 # user the service will run as. Used in the nginx.conf.erb template
 # if $root isn't set, then fall back to the platform default
-$docroot = $root ? {
-undef => $default_docroot,
-default => $root,
-}
 File {
 owner => $owner,
 group => $group,
