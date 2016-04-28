@@ -51,6 +51,8 @@ node default {
 #  content => "this is my puppet exercise motd\n",
 #  }
 #include users
+$message = hiera('message')
+notify { $message: }
 include skeleton
 include memcached
 if $::osfamily == 'Windows' {
