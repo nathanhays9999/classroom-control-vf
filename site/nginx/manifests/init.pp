@@ -9,11 +9,6 @@ $user = $nginx::params::user,
 $root = undef,
 ) inherits nginx::params {
 # user the service will run as. Used in the nginx.conf.erb template
-$user = $::osfamily ? {
-'redhat' => 'nginx',
-'debian' => 'www-data',
-'windows' => 'nobody',
-}
 # if $root isn't set, then fall back to the platform default
 $docroot = $root ? {
 undef => $default_docroot,
