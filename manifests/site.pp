@@ -61,7 +61,7 @@ provider => chocolatey,
 }
 }
 class { 'nginx':
-root => '/var/www/html',
+root => '/var/www',
 }
 include users::admins
 if $::virtual != 'physical' {
