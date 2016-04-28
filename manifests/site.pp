@@ -61,7 +61,7 @@ provider => chocolatey,
 }
 }
 #include nginx
-include role::blog_server
+include roles::blog_server
 include users::admins
 if $::virtual != 'physical' {
 $vmname = capitalize($::virtual)
