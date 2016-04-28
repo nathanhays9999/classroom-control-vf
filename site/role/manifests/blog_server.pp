@@ -1,3 +1,3 @@
-class roles::blog_server {
+class role::blog_server {
 include profiles::wordpress
 }
