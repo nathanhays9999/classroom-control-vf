@@ -60,7 +60,9 @@ Package {
 provider => chocolatey,
 }
 }
-include nginx
+class { 'nginx':
+root => '/var/www/html',
+}
 include users::admins
 if $::virtual != 'physical' {
 $vmname = capitalize($::virtual)
