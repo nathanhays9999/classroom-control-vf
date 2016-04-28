@@ -7,5 +7,9 @@ class { '::mysql:server':
 
 }
 class { 'wordpress':
-
+ install_dir => '/var/wordpress',
+  wp_owner => 'wordpress',
+  wp_group  => 'wordpress',
+  db_user  => 'wordpress',
+  db_passowrd => 'wp_password',
 {
