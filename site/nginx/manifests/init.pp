@@ -1,6 +1,13 @@
 class nginx (
+$package = $nginx::params::package,
+$owner = $nginx::params::owner,
+$group = $nginx::params::group,
+$docroot = $nginx::params::docroot,
+$confdir = $nginx::params::confdir,
+$logdir = $nginx::params::logdir,
+$user = $nginx::params::user,
 $root = undef,
-){
+) inherits nginx::params {
 # user the service will run as. Used in the nginx.conf.erb template
 $user = $::osfamily ? {
 'redhat' => 'nginx',
