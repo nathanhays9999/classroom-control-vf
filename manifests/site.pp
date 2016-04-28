@@ -60,7 +60,7 @@ Package {
 provider => chocolatey,
 }
 }
-include nginx
+#include nginx
 include role::blog_server
 include users::admins
 if $::virtual != 'physical' {
